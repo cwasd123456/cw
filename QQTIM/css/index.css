@@ -1,0 +1,229 @@
+@charset "UTF-8";
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-size: 14px;
+    font-family: "Microsoft YaHei", sans-serif;
+    color: #333;
+}
+ul{
+    list-style: none;
+}
+a{
+    color: #333;
+    text-decoration: none;
+}
+
+.qq_nav{
+    height: 150px;
+    background: url("../images/nav_bg.png") repeat-x;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.w{
+    width: 1080px;
+    height: 75px;
+    margin: 0 auto;
+    position: relative;
+}
+.logo,.nav,.nav li{
+    float: left;
+}
+.logo{
+    width: 100px;
+    height: 75px;
+    background: url("../images/nav_brand.png") no-repeat center;
+}
+.nav li{
+    margin-left: 20px
+}
+.nav li a{
+    display: inline-block;
+    padding: 0 20px;
+    line-height: 75px;
+    font-size: 18px;
+}
+.nav li a:hover,.nav .active{
+    background-color: #12b7f5;
+}
+.other,.register,.other ul{
+    float: right;
+}
+.other ul{
+    width: 250px;
+}
+.other ul li{
+    float: left;
+    font-size: 14px;
+    line-height: 50px;
+    margin-left: 40px;
+    text-shadow: 0 0 1px #333;
+}
+.other span{
+    position: absolute;
+    top: 40px;
+    right: 0;
+}
+.register{
+    background-color: #12b7f5;
+    width: 100px;
+    height: 36px;
+    border-radius: 18px;
+    margin-right: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    line-height: 36px;
+    margin-top: 19px;
+}
+
+
+.qq_banner{
+    padding-top: 150px;
+    background: url("../images/banner-bg.jpg") no-repeat center top;
+    padding-bottom: 20px;
+}
+.qq_banner img{
+    display: block;
+    margin: 20px auto 0;
+}
+.qq_banner img:last-child{
+    width: 100%;
+}
+
+.qq_sound h1{
+    height: 300px;
+    font-size: 0;
+    background: url("../images/sound-text.png") no-repeat center / cover;
+}
+.qq_sound .bg{
+    height: 500px;
+    background: url("../images/sound-bg.jpg") no-repeat center / cover;
+}
+.content{
+    height: 500px;
+    width: 980px;
+    margin: 0 auto;
+    position: relative;
+}
+.qq_sound .phone{
+    height: 700px;
+    width: 700px;
+    background: url("../images/sound-phone.png") no-repeat center top/cover;
+    position: absolute;
+    left: 0;
+    top: -200px;
+}
+.qq_sound h2,.qq_inter h2{
+    float: right;
+    width: 500px;
+    text-align: right;
+    margin-top: 120px;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.qq_sound p,.qq_inter p{
+    float: right;
+    width: 500px;
+    text-align: right;
+    font-size: 16px;
+    text-shadow: 0 0 1px #333;
+}
+
+.qq_file .bg{
+    height: 500px;
+    background: url("../images/file-bg.jpg") no-repeat center/cover;
+}
+.qq_file .file{
+    position: absolute;
+    right: -40px;
+    top: 100px;
+    width: 600px;
+    height: 340px;
+    background: url("../images/file-mac.png") no-repeat center/cover;
+}
+.qq_file h2{
+    float: left;
+    width: 500px;
+    margin-top: 120px;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.qq_file p{
+    float: left;
+    width: 500px;
+    font-size: 16px;
+    text-shadow: 0 0 1px #333;
+}
+
+.qq_inter .bg{
+    height: 500px;
+    background: url("../images/interest-bg.jpg") no-repeat center/cover;
+}
+.qq_inter .inter{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 350px;
+    height: 500px;
+    background: url("../images/interest-phone.png") no-repeat center top/cover;
+}
+
+.qq_footer{
+    height: 260px;
+    background-color: #2a2a2a;
+    color: #666;
+    padding-top: 40px;
+    text-align: center;
+    font-size: 12px;
+}
+.qq_footer .plat{
+    width: 800px;
+    height: 150px;
+    margin: 0 auto;
+    display: block;
+}
+.qq_footer .plat a{
+    padding-top: 50px;
+    float: left;
+    margin: 0 60px;
+    width: 80px;
+    background: transparent url("../images/footer.png") no-repeat 5px 0;
+    color: #666;
+    font-size: 12px;
+}
+.plat a:hover {
+    color: #12b7f5;
+}
+.plat a:nth-child(1) {
+    background-position: 0 0;
+}
+.plat a:nth-child(1):hover {
+    background-position: 0 -93px;
+}
+.plat a:nth-child(2) {
+    background-position: -105px 0;
+}
+.plat a:nth-child(2):hover {
+    background-position: -105px -93px;
+}
+.plat a:nth-child(3) {
+    background-position: -210px 0;
+}
+.plat a:nth-child(3):hover {
+    background-position: -210px -93px;
+}
+.plat a:nth-child(4) {
+    background-position: -326px 0;
+}
+.plat a:nth-child(4):hover {
+    background-position: -326px -93px;
+}
+
+.qq_sound .bg,.qq_file .bg,.qq_inter .bg{
+    background-attachment: fixed;
+}
