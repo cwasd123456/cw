@@ -1,0 +1,238 @@
+.w{
+	width: 1190px;
+	margin: 0 auto;
+}
+body{
+	 background-color: #eeeeee;
+ }
+a{
+	text-decoration: none;
+	font-size: 12px;
+	color: #ccc;
+}
+a:hover{
+	color: brown;
+}
+ul li{
+	list-style: none;
+	
+}
+ul,li,a,h1,input,button,dd{
+	padding: 0;
+	margin: 0;
+}
+img{
+	vertical-align: top;
+	border: 0;
+}
+.red{
+	color: red!important;
+}
+.fr {
+	float: right;
+}
+.fl {
+	float: left;
+}
+i{
+	font-style: normal;
+}
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?axvffw');
+  src:  url('../fonts/icomoon.eot?axvffw#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?axvffw') format('truetype'),
+    url('../fonts/icomoon.woff?axvffw') format('woff'),
+    url('../fonts/icomoon.svg?axvffw#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*top 广告*/
+.top_a{
+	background-color: #000;
+}
+.top_a a{
+	display: block;
+	background: url(../images/top.jpg) no-repeat;
+	height: 80px;
+	position: relative;
+}
+.top_a a i{
+	height: 20px;
+	width: 20px;
+	font-family: "icomoon";
+	color: #fff;
+	position: absolute;
+	top: 5px;
+	right: 0;
+}
+/*导航*/
+.dh{
+	background-color: #E3E4E5;
+	height: 30px;
+	line-height: 30px;
+}
+.df{
+	padding-left: 200px;
+	font-size: 12px;
+	color: #ccc;
+	height: 30px;
+}
+.df i{
+	color: red;
+	font-family: "icomoon";
+	font-size: 14px;
+}
+.caidan li{
+	float: left;
+	height: 30px;
+}
+.caidan li a{
+	font-size: 12px;
+	color: #999;
+}
+.caidan li:hover>a{
+	color: red;
+}
+.caidan .xian{
+	height: 12px;
+	border-left: 1px solid #ccc;
+	margin: 10px 10px 0;
+}
+.caidan .erwei{
+	position: relative;
+}
+.erwei img{
+	position: absolute;
+	vertical-align: top;
+	border: 0;
+	top: 30px;
+	left: -10px;
+}
+/* 页面底部 */
+footer {
+	margin-top: 35px;
+	height: 500px;
+	background-color: #EAEAEA;
+}
+footer a {
+	color: #666;
+}
+.service {
+	padding: 30px 0;
+	border-bottom: 1px solid #DEDEDE;
+	overflow: hidden;
+}
+.service ul li {
+	width: 297px;
+	height: 43px;
+	position: relative;
+	line-height: 43px;
+	float: left;
+}
+.service  li h5 {
+	position: absolute;
+	top: 0;
+	left: 38px;
+	width: 36px;
+	height: 43px;
+	background: url(../images/ico.png) no-repeat;
+	text-indent: -999em;
+}
+.service  li:nth-child(2) h5 {
+	background-position: 0 -43px;
+}
+.service  li:nth-child(3) h5 {
+	background-position: 0 -86px;
+}
+.service  li:nth-child(4) h5 {
+	background-position: bottom;
+}
+.service  li p {
+	font-weight: 700;
+	margin-left: 82px;
+
+}
+
+/* 帮助模块 */
+.help {
+	height: 200px;
+	border-bottom: 1px solid #DEDEDE;
+	padding-top: 25px;
+	box-sizing: border-box;
+}
+.help dl {
+	width: 192px;
+	float: left;
+}
+.help dt,
+.coverage h5 {
+	height: 30px;
+	font-size: 14px;
+	color: #666;
+}
+.help dd {
+	height: 22px;
+}
+
+/* 范围 */
+.coverage {
+	width: 200px;
+	height: 150px;
+	background: url(../images/ico_footer.png) no-repeat;
+}
+.coverage h5 {
+	padding-left: 35px;
+}
+.coverage p {
+	font-size: 12px;
+	color: #666;
+	line-height: 18px;
+	width: 180px;
+}
+.coverage a {
+	display: block;
+	margin-top: 5px;
+	width: 180px;
+	text-align: right;
+}
+/* 底部版权 */
+.copyright {
+	padding-top: 20px;
+	text-align: center;
+	color: #666;
+	font-size: 12px;
+}
+.copyright span {
+	margin: 0 10px;
+}
+
+.copyright div {
+	margin-top:20px;
+}
+.copyright div p {
+	line-height: 22px;
+}
+.foot-icon a {
+	display: inline-block;
+	width: 103px;
+	height: 33px;
+	background: url(../images/ico_footer.png) no-repeat 0 -150px;
+	margin: 20px 4px 0;
+	/* 行内块可以用 text-align: center 来实现居中 */
+}
+.foot-icon a:nth-child(2) {
+	background-position: -103px  -150px;
+}
+.foot-icon a:nth-child(3) {
+	background-position: 0  -183px;
+}
+.foot-icon a:nth-child(4) {
+	 background-position: -103px  -183px;
+}
+.foot-icon a:nth-child(5) {
+	  background-position: 0  -216px;
+}.foot-icon a:nth-child(6) {
+	   background-position: -103px  -216px;
+ }

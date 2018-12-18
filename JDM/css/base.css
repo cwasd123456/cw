@@ -1,0 +1,81 @@
+@charset "UTF-8";
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+body{
+    font-size: 14px;
+    color: #333;
+    font-family: "Microsoft YaHei",sans-serif;
+    background-color: #f5f5f5;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+input,textarea{
+    border: none;
+    outline: none;
+    resize: none;
+    -webkit-appearance: none;
+}
+img{
+    vertical-align: top;
+    border: 0;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.m_l10{
+    margin-left:10px;
+}
+.m_r10{
+    margin-right:10px;
+}
+.m_t10{
+    margin-top:10px;
+}
+.m_b10{
+    margin-bottom:10px;
+}
+.clearfix::after{
+    content:"";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+.clearfix{
+    zoom: 1;
+}
+[class^="icon_"],[class*=" icon_"]{
+    background-repeat: no-repeat;
+    background-image: url("../images/sprites.png");
+    background-size: 200px 200px;
+}
+.w_50p{
+    width: 50%;
+}
+.br{
+    border-right: 1px solid #ddd;
+}
+.bt{
+    border-top: 1px solid #ddd;
+}
+.bl{
+    border-left: 1px solid #ddd;
+}
+.bb{
+    border-bottom: 1px solid #ddd;
+}

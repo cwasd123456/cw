@@ -1,0 +1,223 @@
+@charset "UTF-8";
+@font-face {
+    /*2.申明自己的字体名称*/
+    font-family: 'wjs';
+    /*3.引入字体文件（约束某一段字符代码什么图案）*/
+    src: url(../fonts/MiFie-Web-Font.svg) format('svg'),
+    url(../fonts/MiFie-Web-Font.eot) format('embedded-opentype'),
+    url(../fonts/MiFie-Web-Font.ttf) format('truetype'),
+    url(../fonts/MiFie-Web-Font.woff) format('woff');
+}
+.wjs_icon{
+    font-family: wjs;
+}
+.wjs_icon_phone::before{
+    content: "\e908";
+}
+.wjs_icon_tel::before{
+    content: "\e909";
+}
+.wjs_icon_logo::before{
+    content: "\e920";
+}
+.wjs_icon_name::before{
+    content: "\e93e";
+}
+.wjs_icon_dollar::before{
+    content: "\e903";
+}
+.wjs_icon_clock::before{
+    content: "\e906";
+}
+.wjs_icon_video::before{
+    content: "\e905";
+}
+.wjs_icon_news_01::before {
+    content: "\e90e";
+}
+
+.wjs_icon_news_02::before {
+    content: "\e90f";
+}
+
+.wjs_icon_news_03::before {
+    content: "\e910";
+}
+
+.wjs_icon_news_04::before {
+    content: "\e911";
+}
+
+.wjs_icon_partner01::before {
+    content: "\e946";
+}
+
+.wjs_icon_partner02::before {
+    content: "\e92f";
+}
+
+.wjs_icon_partner03::before {
+    content: "\e92e";
+}
+
+.wjs_icon_partner04::before {
+    content: "\e92a";
+}
+
+.wjs_icon_partner05::before {
+    content: "\e929";
+}
+
+.wjs_icon_partner06::before {
+    content: "\e931";
+}
+
+.wjs_icon_partner07::before {
+    content: "\e92c";
+}
+
+.wjs_icon_partner08::before {
+    content: "\e92b";
+}
+
+.wjs_icon_partner09::before {
+    content: "\e92d";
+}
+
+/*头部*/
+.wjs_top{
+    line-height: 40px;
+    font-size: 12px;
+    border-bottom: 1px solid #ccc;
+}
+.wjs_top > .container > .row > div:first-child ~ div{
+    border-left: 1px solid #ccc;
+    text-align: center;
+}
+.wjs_top .wjs_app{
+    display: block;
+}
+.wjs_top img{
+    display: none;
+}
+.wjs_app:hover img{
+    position: absolute;
+    display: block;
+    left: 0px;
+    z-index: 100000;
+}
+.wjs_top .btn_register{
+    border: none;
+    background: #e92322;
+    color: #fff;
+    padding: 3px 12px;
+    font-size: 12px;
+}
+.wjs_top .row div:last-child a:last-child{
+    padding: 0 12px;
+}
+
+/*导航*/
+.wjs_nav{
+    background-color: #fff;
+    height: 80px;
+    line-height: 80px;
+    border: none;
+    z-index: 99999;
+    top: 0;
+    width: 100%;
+}
+.wjs_nav .navbar-toggle{
+    margin-top: 22px;
+}
+.wjs_nav .wjs_icon_logo{
+    font-size: 50px;
+    color: #e92322;
+    line-height: 50px;
+}
+.wjs_nav .wjs_icon_name{
+    font-size: 36px;
+    color: #333;
+    line-height: 50px;
+}
+.wjs_nav .navbar-nav > li > a{
+    color: #555;
+}
+.wjs_nav .navbar-nav > li > a:hover{
+    border-bottom: 2px solid #e92322;
+}
+.wjs_nav .navbar-nav > .active > a{
+    color: #555;
+    background-color: #fff;
+    border-bottom: 2px solid #e92322;
+}
+.wjs_nav .navbar-nav > .active > a:hover{
+    background-color: #fff;
+}
+.wjs_nav .navbar-nav a{
+    height: 80px;
+    padding-top: 30px;
+}
+
+/*banner*/
+.banner .carousel-inner .m img{
+    width: 100%;
+}
+.banner .carousel-inner .p{
+    display: block;
+    width: 100%;
+    height: 400px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*info*/
+.wjs_info{
+    padding: 15px 0;
+}
+.wjs_info a{
+    height: 70px;
+    display: block;
+    padding: 10px 0 10px 20px;
+}
+.wjs_info a:hover{
+    color: #e92322;
+}
+.wjs_info a span{
+    float: left;
+    font-size: 30px;
+    padding-top: 4px;
+    padding-right: 10px;
+    padding-left: 20px;
+}
+
+/*预约*/
+.wjs_yy{
+    padding: 40px 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.wjs_yy .container{
+    width: 900px;
+}
+.wjs_yy .book{
+    color: #e92322;
+}
+.wjs_yy .video:hover{
+    color: #e92322;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    .wjs_yy > .container{
+        width: 750px;
+    }
+}
+@media (max-width: 768px) {
+    .wjs_yy > .container{
+        width: 100%;
+    }
+}
+
+
+

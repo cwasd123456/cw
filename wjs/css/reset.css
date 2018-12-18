@@ -1,0 +1,23 @@
+@charset "UTF-8";
+body{
+    font-size : 14px;
+    font-family: "Microsoft YaHei", sans-serif;
+    color: #333;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+a:hover{
+    text-decoration: none;
+    color: #333;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}

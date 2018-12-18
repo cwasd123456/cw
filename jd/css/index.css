@@ -1,0 +1,335 @@
+
+/*header*/
+.header{
+	position: relative;
+	height: 140px;
+	/*background-color: rgba(255,0,0,.3);*/
+}
+.logo{
+	position: absolute;
+	top: -30px;
+	left: 0;
+	width: 190px;
+	height: 170px;
+	box-shadow: 0px -10px 4px 2px rgba(0,0,0,.3);
+}
+.logo a{
+	display: block;
+	width: 190px;
+	height: 170px;
+	background: url(../images/logo.jpg) no-repeat;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+.xdh{
+	width: 770px;
+	height: 40px;
+	line-height: 40px;
+	position: absolute;
+	left: 200px;
+	bottom: 0;
+}
+.xdh ul li{
+	float: left;
+	font-weight: 600;
+	color: #333;
+	font-size: 18px;
+	cursor: pointer;
+	margin-left: 30px;
+}
+.xdh ul li:hover{
+	color: red;
+}
+.hav{
+	position: absolute;
+	right: 0;
+	bottom: 10px;
+}
+.search{
+	width: 550px;
+    height: 35px;
+    position: absolute;
+    top: 25px;
+    left: 320px;
+    
+}
+.search input{
+	width: 493px;
+	height: 33px;
+	outline: none;
+	border: 1px solid red;
+	color: #ccc;
+	padding-left: 5px;
+	float: left;
+}
+.search button{
+	float: left;
+	height: 35px;
+	width: 50px;
+	background-color: red;
+	cursor: pointer;
+    outline: none;
+    border: 0;
+}
+.search button i{
+	font-family: "icomoon";
+	color: #fff;
+	font-size: 16px;
+}
+.car{
+	width: 188px;
+    height: 33px;
+    border: 1px solid #ccc;
+    position: absolute;
+    top: 25px;
+    right: 100px;
+    text-align: center;
+    line-height: 33px;
+}
+.car i{
+	color: red;
+	font-family: "icomoon";
+}
+.car a{
+	color: red;
+	font-size: 12px;
+}
+.car span{
+	position: absolute;
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	color: white;
+	background-color: red;
+	top: 5px;
+    right: 30px;
+    line-height: 15px;
+    font-size: 12px;
+}
+.hotwords {
+    position: absolute;
+    top: 68px;
+    left: 320px;
+}
+.hotwords a{
+	font-size: 12px;
+	color: #999;
+}
+.f10 {
+    color: #f10215!important;
+}
+/*中间banner 部分*/
+.zhong{
+	height: 480px;
+}
+.z_dh{
+	position: relative;
+	height: 100%;
+	width: 190px;
+	background-color: #6e6568;
+	color: #ffffff;
+}
+.z_ad{
+	position: absolute;
+	width: 250px;
+	height: 480px;
+	top: 0;
+	left: -250px;
+}
+.z_ad div{
+	position: absolute;
+	top: 0;
+	left: 250px;
+	z_index: 999;
+	height: 100%;
+	width: 0;
+	background: url(../images/ad-r.jpg) no-repeat;
+	transition: all 0.8s;
+}
+.z_ad:hover div{
+	width: 990px;
+}
+.z_dh li a{
+	color: #fff;
+	font-size: 14px;
+	margin: 0 3px;
+}
+.z_dh li a:hover{
+	 color: red;
+ }
+.z_dh ul{
+	padding-top: 10px;
+}
+.z_dh li{
+	padding-left: 10px;
+	height: 29px;
+	line-height: 26px;
+}
+.z_dh li:hover{
+	background-color: #9c9698;
+}
+.banner{
+	height: 100%;
+	width: 790px;
+	margin-left: 10px;
+}
+.b_shang{
+	position: relative;
+}
+.b_shang a:nth-child(2),.b_shang a:nth-child(3){
+	position: absolute;
+	width: 30px;
+	height: 60px;
+	top: 50%;
+	margin-top: -30px;
+	text-align: center;
+	color: white;
+	background-color: rgba(0,0,0,.3);
+	line-height: 60px;
+	font-size: 20px;
+}
+.b_shang a:nth-child(3){
+	right: 0;
+}
+.b_shang a:hover{
+	color: red;
+}
+.circle{
+	background-color: rgba(255,255,255,.3);
+	width: 175px;
+	height: 20px;
+	border-radius: 10px;
+	position: absolute;
+	line-height: 20px;
+	bottom: 20px;
+	left: 50%;
+	margin-left: -88px;
+	text-align: center;
+}
+.circle span{
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	border-radius: 6px;
+	background-color: white;
+	margin: 0 4px;
+}
+.circle .s_red{
+	background-color: red;
+}
+
+.b_xia{
+	margin-top: 10px;
+	width: 100%;
+	height: 130px;
+}
+.b_xia a:first-child{
+	float: left;
+}
+.b_xia a:last-child{
+	float: right;
+}
+.zhong_r{
+	height: 100%;
+	width: 190px;
+	background-color: #fff;
+}
+.login{
+	height: 85px;
+	border-bottom: 1px solid #ccc;
+	background-color: #fff;
+	padding: 15px;
+}
+.l_s{
+	width: 95px;
+	height: 60px;
+	color: #666;
+	font-size: 12px;
+	line-height: 20px;
+	padding-left: 60px;
+	position: relative;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.l_s a {
+	color: #666;
+}
+.l_s a:hover{
+	color: red;
+}
+.l_x a{
+	display: inline-block;
+	border: 2px solid red;
+	text-align: center;
+	color: red;
+	width: 70px;
+	line-height: 20px;
+}
+.l_x a:hover{
+	background-color: red;
+	color: white;
+}
+.toux{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: 2px solid lightgrey;
+	text-align: center;
+}
+.toux img{
+	width: 40px;
+	border-radius: 50%;
+	margin: 5px;
+}
+.new{
+	height: 154px;
+	box-sizing: border-box;
+	border-bottom: 1px solid #ccc;
+	padding: 7px 15px 0;
+}
+.n_s{
+	border-bottom: 1px solid #ccc;
+	height: 17px;
+}
+.n_s a:first-child{
+	border-right: 1px solid #ccc;
+	padding-right: 10px;
+}
+.n_s a:nth-child(2){
+	padding-left: 10px;
+}
+/*.n_s a:hover,.n_x a:hover{*/
+	/*color: brown;*/
+/*}*/
+.n_x{
+	margin-top: 10px;
+}
+.n_x ul li{
+	padding: 4px 0;
+}
+.expand{
+	height: 209px;
+	overflow: hidden;
+}
+.expand ul{
+	width: 192px;
+}
+.expand li{
+	width: 47px;
+	height: 69px;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	float: left;
+	text-align: center;
+}
+.expand li i{
+	display: block;
+	width: 18px;
+	height: 23px;
+	margin: 10px 15px 5px;
+	background: url(../images/sprite_fs@1x.png) no-repeat -5px -88px;
+}
