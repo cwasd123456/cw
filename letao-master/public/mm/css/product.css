@@ -1,0 +1,40 @@
+@charset "UTF-8";
+.tt_bottom{
+    background: #f5f5f5;
+    border-top: 1px solid #ddd;
+    height: 45px;
+    position: absolute;
+    bottom: 0;
+    line-height: 45px;
+    width: 100%;
+    padding: 6px 10px;
+}
+.tt_bottom .mui-btn:last-child{
+    margin-right: 8px;
+}
+.tt_item{
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+.tt_price span:first-child{
+    color: red;
+    font-size: 20px;
+}
+.tt_price span:last-child{
+    font-size: 12px;
+    text-decoration: line-through;
+}
+.tt_size span{
+    font-size: 12px;
+    padding: 5px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    line-height: 30px;
+}
+.tt_size span.now{
+    background-color: #069;
+}
+.tt_num span{
+    color: #666;
+    font-size: 12px;
+}

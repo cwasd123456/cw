@@ -1,0 +1,66 @@
+@charset "UTF-8";
+.tt_search{
+    margin-top: 10px;
+    padding: 0 10px;
+}
+.tt_search .form_group{
+    position: relative;
+}
+.tt_search input{
+    height: 34px;
+    border: 1px solid #069;
+    font-size: 12px;
+    border-radius: 6px;
+}
+.tt_search .form_group button{
+    border-radius: 0 6px 6px 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #069;
+    color: #fff;
+    height: 34px;
+    border: 1px solid #069;
+    font-size: 12px;
+    width: 60px;
+}
+.tt_order{
+    background-color: #eee;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+}
+.tt_order a{
+    float: left;
+    width: 25%;
+    text-align: center;
+    color: #333;
+    font-size: 12px;
+}
+.tt_productList{
+    padding: 0 10px;
+    width: 100%;
+}
+.tt_productList .item{
+    float: left;
+    width: 48%;
+    text-align: center;
+    box-shadow: 0 0 5px #ccc;
+    margin-top: 10px;
+    padding: 10px 5px;
+}
+.tt_productList .item:nth-child(2n){
+    margin-left: 4%;
+}
+.tt_productList .mui-ellipsis-2{
+    height: 41px;
+}
+.tt_productList .item img{
+    width: 100%;
+}
+.tt_productList .item p span:first-child{
+    color: red;
+}
+.tt_productList .item p span:last-child{
+    text-decoration: line-through;
+}

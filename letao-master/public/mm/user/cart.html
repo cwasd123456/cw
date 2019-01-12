@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <title>taotao</title>
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../assets/mui/css/mui.css"/>
+    <link rel="stylesheet" href="../assets/fa/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/cart.css">
+</head>
+<body>
+<div class="tt_container">
+    <header class="tt_topbar">
+        <a class="btn_left" href="javascript:history.back();"><span class="mui-icon mui-icon mui-icon-arrowleft"></span></a>
+        <h3>购物车</h3>
+    </header>
+    <div class="tt_content">
+        <div class="tt_warp">
+            <div class="mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <div class="loading"><span class="mui-icon mui-icon-spinner"></span></div>
+                    <!--<ul class="mui-table-view">-->
+                        <!--<li class="mui-table-view-cell">-->
+                            <!--<div class="mui-slider-right mui-disabled">-->
+                                <!--<a class="mui-btn mui-btn-blue mui-icon mui-icon-compose"></a>-->
+                                <!--<a class="mui-btn mui-btn-red mui-icon mui-icon-trash"></a>-->
+                            <!--</div>-->
+                            <!--<div class="mui-slider-handle clearfix">-->
+                                <!--<img class="img mui-pull-left" src="/mobile/images/product.jpg">-->
+                                <!--<div class="right">-->
+                                    <!--<p class='mui-ellipsis-2'>匡威三星标1970s converse复刻 142334c 144757c三星标黑色高帮</p>-->
+                                    <!--<div class="xinxi">-->
+                                        <!--<div class="price">-->
+                                            <!--<span>&yen499.1</span>-->
+                                            <!--<span>&yen799.1</span>-->
+                                        <!--</div>-->
+                                        <!--<span class="num">1双</span>-->
+                                    <!--</div>-->
+                                    <!--<p class="size">鞋码：44</p>-->
+                                <!--</div>-->
+                                <!--<input type="checkbox">-->
+                            <!--</div>-->
+                        <!--</li>-->
+
+                    <!--</ul>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tt_cartBom">
+        <span class="mui-pull-left">订单总金额：&yen;<span>0</span></span>
+        <a href="javascript:;" class="mui-pull-right">生成订单</a>
+    </div>
+    <footer class="tt_footer">
+        <a href="/mm/index.html">
+            <span class="fa fa-home"></span>
+            <p>首页</p>
+        </a>
+        <a href="/mm/category.html">
+            <span class="fa fa-bars"></span>
+            <p>分类</p>
+        </a>
+        <a href="/mm/user/cart.html">
+            <span class="fa fa-shopping-cart"></span>
+            <p>购物车</p>
+        </a>
+        <a href="/mm/user/index.html">
+            <span class="fa fa-user"></span>
+            <p>会员中心</p>
+        </a>
+    </footer>
+</div>
+
+<script id="list" type="text/template">
+    <ul class="mui-table-view">
+        <%for(var i=0;i < data.length;++i){%>
+        <li class="mui-table-view-cell">
+            <div class="mui-slider-right mui-disabled">
+                <a class="mui-btn mui-btn-blue mui-icon mui-icon-compose"></a>
+                <a class="mui-btn mui-btn-red mui-icon mui-icon-trash"></a>
+            </div>
+            <div class="mui-slider-handle clearfix">
+                <img class="img mui-pull-left" src="<%=data[i].pic[0].picAddr%>">
+                <div class="right">
+                    <p class='mui-ellipsis-2'><%=data[i].proName%></p>
+                    <div class="xinxi">
+                        <div class="price">
+                            <span>&yen<%=data[i].price%></span>
+                            <span>&yen<%=data[i].oldPrice%></span>
+                        </div>
+                        <span class="num"><%=data[i].num%>双</span>
+                    </div>
+                    <p class="size">鞋码：<%=data[i].size%></p>
+                </div>
+                <input type="checkbox"  data-num="<%=data[i].num%>"
+                       data-price="<%=data[i].price%>">
+            </div>
+        </li>
+        <%}%>
+    </ul>
+</script>
+<script src="../assets/mui/js/mui.js"></script>
+<script src="../assets/zepto/zepto.min.js"></script>
+<script src="../assets/artTemplate/template-native.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/user/cart.js"></script>
+</body>
+</html>

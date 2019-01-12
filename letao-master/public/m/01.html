@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="./vue-2.4.0.js"></script>
+	<script src="./vue-resource-1.3.4.js"></script>
+</head>
+<body>
+	<!-- <div class="app">{{ msg }}</div> -->
+	<div class="app">
+		<p v-text="msg"></p>
+		<p v-bind:title="title">{{ asd }}</p>
+		<p v-html = 'span'></p>
+		<!-- <input type="button" value='btn' v-on:click='click'> -->
+		<input type="button" value='btn' @click='click'>
+		<p>{{ data }}</p>
+		<input type="text" v-model='data'>
+		<div>{{ str }}</div>
+		<input type='button' value='start' @click='start'>
+		<input type='button' value='stop' @click='stop'>
+
+		<ul>
+			<li v-for = 'item in list'>{{ item }}</li>
+		</ul>
+
+		<input type='button' value='get' @click='get'>
+	</div>
+
+	<script>
+		// var timeId = null;
+		var vue = new Vue({
+			el: '.app',
+			data: {
+				msg: 'hehe',
+				title: 'asd',
+				asd: 'asd',
+				span: '<span>span</span>',
+				data: 'qwasd',
+				str: 'what\'s happening',
+				timeId: null,
+				list: [1,2,3,4,5,6,7]
+			},
+			methods: {
+				click(){
+					console.log('click')
+				},
+				start(){
+					if(this.timeId) return
+					this.timeId = setInterval(() => {
+						var start = this.str.substring(0,1)
+						var end = this.str.substring(1)
+						this.str = end + start
+					},400)
+					
+				},
+				stop(){
+					clearInterval(this.timeId)
+					// console.log(timeId)
+					this.timeId = null
+				},
+				get(){
+					this.$http.get('/product/queryProductDetailList').then(function(res){
+						console.log(res.body)
+					})
+				}
+			}
+		})
+	</script>
+</body>
+</html>

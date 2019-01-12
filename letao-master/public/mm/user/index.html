@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0">
+    <title>taotao</title>
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../assets/mui/css/mui.css"/>
+    <link rel="stylesheet" href="../assets/fa/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/user.css">
+</head>
+<body>
+<div class="tt_container">
+    <header class="tt_topbar">
+        <a class="btn_left" href="javascript:history.back();"><span class="mui-icon mui-icon mui-icon-arrowleft"></span></a>
+        <h3>个人中心</h3>
+    </header>
+    <div class="tt_content">
+        <div class="tt_warp">
+            <div class="loading"><span class="mui-icon mui-icon-spinner"></span></div>
+            <!--<ul class="tt_userList">-->
+                <!--<li class="user_item">-->
+                    <!--<a href="javascript:;" class="clearfix">-->
+                        <!--<img src="../images/user.jpg" alt="" class="mui-pull-left">-->
+                        <!--<div class="content">-->
+                            <!--cw-->
+                            <!--<p>绑定手机:18662725027</p>-->
+                        <!--</div>-->
+                    <!--</a>-->
+                <!--</li>-->
+                <!--<li class="user_item"><a href="javascript:;">-->
+                    <!--账号与安全-->
+                <!--</a></li>-->
+                <!--<li class="user_item"><a href="javascript:;">-->
+                    <!--我的购物车-->
+                <!--</a></li>-->
+                <!--<li class="user_item"><a href="javascript:;">-->
+                    <!--收货地址管理-->
+                <!--</a></li>-->
+            <!--</ul>-->
+            <!--<div class="tt_out">-->
+                <!--<a href="javascript:;" class="mui-btn mui-block">退出</a>-->
+            <!--</div>-->
+        </div>
+    </div>
+
+    <footer class="tt_footer">
+        <a href="/mm/index.html">
+            <span class="fa fa-home"></span>
+            <p>首页</p>
+        </a>
+        <a href="/mm/category.html">
+            <span class="fa fa-bars"></span>
+            <p>分类</p>
+        </a>
+        <a href="/mm/user/cart.html">
+            <span class="fa fa-shopping-cart"></span>
+            <p>购物车</p>
+        </a>
+        <a href="/mm/user/index.html">
+            <span class="fa fa-user"></span>
+            <p>会员中心</p>
+        </a>
+    </footer>
+</div>
+<script id="content" type="text/template">
+    <ul class="tt_userList">
+        <li class="user_item">
+            <a href="javascript:;" class="clearfix">
+                <img src="../images/user.jpg" alt="" class="mui-pull-left">
+                <div class="content">
+                    <%=username%>
+                    <p>绑定手机:<%=mobile%></p>
+                </div>
+            </a>
+        </li>
+        <li class="user_item"><a href="javascript:;">
+            账号与安全
+        </a></li>
+        <li class="user_item"><a href="javascript:;">
+            我的购物车
+        </a></li>
+        <li class="user_item"><a href="javascript:;">
+            收货地址管理
+        </a></li>
+    </ul>
+    <div class="tt_out">
+        <a href="javascript:;" class="mui-btn mui-block">退出</a>
+    </div>
+</script>
+<script src="../assets/mui/js/mui.js"></script>
+<script src="../assets/zepto/zepto.min.js"></script>
+<script src="../assets/artTemplate/template-native.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/user/index.js"></script>
+</body>
+</html>

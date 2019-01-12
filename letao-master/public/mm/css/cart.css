@@ -1,0 +1,51 @@
+@charset "UTF-8";
+.tt_cartBom{
+    position: absolute;
+    bottom: 55px;
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+    border: 1px solid #ccc;
+    padding-left:10px;
+    z-index: 22;
+}
+.tt_cartBom span{
+    color: red;
+    font-size: 12px;
+}
+.tt_cartBom a{
+    color: white;
+    background-color: red;
+    font-size: 12px;
+    padding: 0 10px;
+}
+.mui-slider-handle img{
+    height: 60px;
+    width: 60px;
+}
+.mui-slider-handle input{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.mui-slider-handle .right{
+    margin-left: 70px;
+}
+.mui-slider-handle .xinxi{
+    position: relative;
+    width: 100%;
+    font-size: 12px;
+}
+.mui-slider-handle .xinxi .num{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #ccc;
+}
+.price span:first-child{
+    color: red;
+}
+.price span:last-child{
+    text-decoration: line-through;
+    color: #ccc;
+}
